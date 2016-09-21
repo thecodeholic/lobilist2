@@ -1,7 +1,10 @@
 {
   "name": "lobilist2",
-  "description": "Lobilist - jQuery todo plugin",
-  "main": "lobilist2.js",
+  "description": "Lobilist2 - jQuery todo plugin",
+  "main": [
+    "./js/lobilist2.js",
+    "./css/lobilist2.css"
+  ],
   "authors": [
     "Zura Sekhniashvili <zurasekhniashvili@gmail.com>"
   ],

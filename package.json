@@ -17,11 +17,14 @@
   },
   "homepage": "https://github.com/arboshiki/lobilist2#readme",
   "devDependencies": {
+    "fs": "0.0.1-security",
     "gulp": "latest",
-    "gulp-util": "latest",
-    "gulp-sourcemaps": "latest",
+    "gulp-concat": "latest",
     "gulp-less": "latest",
+    "gulp-path": "^3.0.3",
+    "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
-    "gulp-concat": "latest"
+    "gulp-util": "latest",
+    "wrench": "^1.5.9"
   }
 }

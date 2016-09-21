@@ -1,0 +1,10 @@
+"use strict";var Lobi=Lobi||{};Lobi.ns=function(namespace){for(var parts=namespace.split("."),currentObj=window,i=0;i<parts.length;i++)currentObj[parts[i]]||(currentObj[parts[i]]={}),currentObj=currentObj[parts[i]];return currentObj},Lobi.nsFromClass=function(namespace){for(var parts=namespace.split("."),currentObj=window,i=0;i<parts.length-1;i++)currentObj[parts[i]]||(currentObj[parts[i]]={}),currentObj=currentObj[parts[i]];return currentObj},Lobi.getClassName=function($class){var parts=$class.split(".");return parts[parts.length-1]},Lobi.define=function($class,options){var extend,ns=Lobi.nsFromClass($class),$className=Lobi.getClassName($class);options=options||{},extend=options.extend?options.extend.prototype:null,options.singleton?(ns[$className]=$.extend({},extend,options,{$$className:$class}),ns[$className].constructor()):(ns[$className]=function(options){this.constructor.call(this,options)},ns[$className].prototype=$.extend({},extend,options,{$$className:$class})),console.log($class,ns)};
+!function(){"use strict";Lobi.define("Lobi.Board",{})}();
+!function(){"use strict"}();
+!function(){"use strict"}();
+!function(){"use strict"}();
+!function(){"use strict";Lobi.define("Lobi.provider.storage.BaseProvider",{})}();
+!function(){"use strict"}();
+!function(){"use strict"}();
+!function(){"use strict"}();
+!function(){"use strict"}();

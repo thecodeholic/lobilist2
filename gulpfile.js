@@ -1,24 +1,20 @@
 /**
  * Created by zura on 9/21/2016.
  */
+'use strict';
+
 var gulp = require('gulp');
-var less = require('gulp-less');
-var sourcemaps = require('gulp-sourcemaps');
+var wrench = require('wrench');
+var path = require('gulp-path');
 
-gulp.task('copy', function () {
-    // @todo
+wrench.readdirSyncRecursive('./gulp').filter(function (file) {
+    return (/\.(js)$/i).test(file);
+}).map(function (file) {
+    require('./gulp/' + file);
 });
 
-gulp.task('less', function(){
-    // @todo
-});
-
-gulp.task('js', function(){
-    // @todo
-});
-
-gulp.src('./less/**/*.less')
-    .pipe(sourcemaps.init())
-    .pipe(less())
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./public/css'));
+/**
+ *  Default task clean temporaries directories and launch the
+ *  main optimization build task
+ */
+gulp.task('default', ['js', 'copy', 'watch']);
