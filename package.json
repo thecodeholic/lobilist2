@@ -1,0 +1,27 @@
+{
+  "name": "lobilist2",
+  "version": "1.0.0",
+  "description": "Lobilist - jQuery todo plugin",
+  "main": "lobilist2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arboshiki/lobilist2.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/arboshiki/lobilist2/issues"
+  },
+  "homepage": "https://github.com/arboshiki/lobilist2#readme",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-less": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest"
+  }
+}

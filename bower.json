@@ -1,0 +1,21 @@
+{
+  "name": "lobilist2",
+  "description": "Lobilist - jQuery todo plugin",
+  "main": "lobilist2.js",
+  "authors": [
+    "Zura Sekhniashvili <zurasekhniashvili@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/arboshiki/lobilist2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7"
+  }
+}
