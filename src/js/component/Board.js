@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 
-    Lobi.define('Lobi.Board', {
-
+    Lobi.define('Lobi.component.Board', {
+         extend: Lobi.component.Base
     });
 })();

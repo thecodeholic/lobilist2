@@ -4,5 +4,7 @@
 (function () {
     'use strict';
 
-
+    Lobi.define('Lobi.component.Card', {
+         extend: Lobi.component.Base
+    });
 })();

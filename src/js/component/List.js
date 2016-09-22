@@ -4,5 +4,7 @@
 (function () {
     'use strict';
 
-
+    Lobi.define('Lobi.component.List', {
+         extend: Lobi.component.Base
+    });
 })();
